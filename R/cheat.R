@@ -12,9 +12,8 @@ cheat <- function(question_number) {
 
     ("Answer to Question 3.1.1 -----------------------------------------------") %>% noquote() %>% print()
     ("set.seed(1)") %>% noquote() %>% print()
-    ("grades <- rnorm(n = 60, mean = 8, sd = 1)") %>% noquote() %>% print()
+    ("grades <- rnorm(n = 60, mean = 8, sd = 1) # grades will have a normal distribution") %>% noquote() %>% print()
     ("grades[grades > 10] <- 10") %>% noquote() %>% print()
-    ("grades[grades < 6] <- 6") %>% noquote() %>% print()
 
     ("hist(grades, xlim = range(0, 10)) # Histogram of simulated scores for course") %>% noquote %>% print()
 
