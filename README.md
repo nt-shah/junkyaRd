@@ -3,6 +3,11 @@
 ## Usage
 The package _junkyaRd_ essentially is a dump of random functions. At the moment it contains three functions that I created for an assignment in my course. But it essentially aims to be a random spot to dump functions in. 
 
+```r
+devtools::install_github("nt-shah/junkyaRd")
+library(junkyaRd)
+```
+
 ## Functions
 
 #### remind_me()
@@ -11,7 +16,7 @@ This function contains no arguments; by simply running it, a list of things you 
 
 This is all you do and see what it produces! ;)
 
-```eval = TRUE
+```r
 remind_me()
 ```
 
@@ -20,7 +25,7 @@ remind_me()
 
 This function contains only one argument: `question_number`. You must insert a question number from Assignment 3.1 (for e.g. you simply type 1 or 14 or 7). The function then returns the solution to that question. This is how you would use it: 
 
-```eval = TRUE
+```r
 cheat(1)      # to get the solution for Q3.1.1
 cheat(9)      # to get the solution for Q3.1.9
 ```
@@ -35,7 +40,7 @@ This function generates random art. It has the following arguments: `seed`, `n` 
 Different seeds produce different styles of artwork, so go wild and experiment - and switch up `n` and `range_max` to see all the cool things you can make! 
 
 Here is some example code for some art pieces:
-```eval = TRUE
+```r
 make_art(seed = 24, n = 4, range_max = 15)
 make_art(seed = 348, n = 500, range_max = 35)
 make_art(seed = 278, n = 785, range_max = 4)
