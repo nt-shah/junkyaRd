@@ -22,12 +22,22 @@ This function contains only one argument: `question_number`. You must insert a q
 
 ```eval = TRUE
 cheat(1)      # to get the solution for Q3.1.1
-cheat(7)      # to get the solution for Q3.1.7
+cheat(9)      # to get the solution for Q3.1.9
 ```
 
-_Note: The cheat() function only works for specific questions at the moment._
+_Note: The cheat() function only works for specific questions at the moment (namely: 1, 9, 16)._
 
 
 #### make_art()
 
-This function generates random art. It has the following arguments: 
+This function generates random art. It has the following arguments: `seed`, `n` and `range_max`. The `seed` helps generate random datasets (the seed must be a number between 1 to 500). The `n` argument helps specify how many datapoints you want in your artwork (n must be between 1-2000, else it takes too long to run). Lastly, `range_max` is part of the scale_size ggplot function; and lets you restrict how spread out you want your artwork (range_max must be between 1-50). 
+
+Different seeds produce different styles of artwork, so go wild and experiment - and switch up `n` and `range_max` to see all the cool things you can make! 
+
+Here is some example code for some art pieces:
+```eval = TRUE
+make_art(seed = 24, n = 4, range_max = 15)
+make_art(seed = 348, n = 500, range_max = 35)
+make_art(seed = 278, n = 785, range_max = 4)
+make_art(seed = 163, n = 250, range_max = 20)
+```
