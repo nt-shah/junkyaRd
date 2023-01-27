@@ -25,7 +25,7 @@ cheat(1)      # to get the solution for Q3.1.1
 cheat(7)      # to get the solution for Q3.1.7
 ```
 
-_Note: The cheat() function only works for specific questions at the moment. _
+_Note: The cheat() function only works for specific questions at the moment._
 
 
 #### make_art()
