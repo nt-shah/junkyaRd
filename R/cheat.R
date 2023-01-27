@@ -7,6 +7,17 @@
 
 cheat <- function(question_number) {
 
+  if(!require("dplyr")) {
+    install.packages("dplyr")
+    library(dplyr)
+  }
+
+  if(!require("stringr")) {
+    install.packages("stringr")
+    library(stringr)
+  }
+
+
   # Question 3.1.1
   if (question_number == 1) {
 
@@ -46,6 +57,8 @@ cheat <- function(question_number) {
 
 
 }
+
+
 
 
 

@@ -1,13 +1,38 @@
 # # This is a function named "make_art"
 # which generates random art on the basis of 3 numbers you put in!
 
-
 make_art <- function(seed, n, range_max) {
 
   # main colour palettes we will work with:
+
+  if(!require("ggplot2")) {
+    install.packages("ggplot2")
+    library(ggplot2)
+  }
+
+  if(!require("dplyr")) {
+    install.packages("dplyr")
+    library(dplyr)
+  }
+
+  if(!require("tidyverse")) {
+    install.packages("tidyverse")
+    library(tidyverse)
+  }
+
   if(!require("wesanderson")) {
     install.packages("wesanderson")
     library(wesanderson)
+  }
+
+  if(!require("tibble")) {
+    install.packages("tibble")
+    library(tibble)
+  }
+
+  if(!require("ggthemes")) {
+    install.packages("ggthemes")
+    library(ggthemes)
   }
 
 
@@ -200,3 +225,6 @@ make_art <- function(seed, n, range_max) {
   print(art)
 
 }
+
+
+
