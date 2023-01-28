@@ -35,7 +35,7 @@ _Note: The cheat() function only works for specific questions at the moment (nam
 
 #### make_art()
 
-This function generates random art. It has the following arguments: `seed`, `n` and `range_max`. The `seed` helps generate random datasets (the seed must be a number between 1 to 500). The `n` argument helps specify how many datapoints you want in your artwork (n must be between 1-2000, else it takes too long to run). Lastly, `range_max` is part of the scale_size ggplot function; and lets you restrict how spread out you want your artwork (range_max must be between 1-50). 
+This function generates random art. It has the following arguments: `seed`, `n` and `range_max`. The `seed` helps generate random datasets (the seed must be a number between 1 to 500). The `n` argument helps specify how many datapoints you want in your artwork (n must be between 1-2000, else it takes too long to run). Lastly, `range_max` is part of the scale_size ggplot function; and lets you restrict how thick you want your lines/area/points (range_max must be between 1-50). 
 
 Different seeds produce different styles of artwork, so go wild and experiment - and switch up `n` and `range_max` to see all the cool things you can make! 
 
